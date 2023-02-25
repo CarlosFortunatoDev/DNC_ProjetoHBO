@@ -6,27 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>HBO MAX</title>
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <nav id="menu">
-            <img src="assets/images/hbo.png" alt="hbo">
-            <a href="">Menu</a>
-            <a href="">Assinar</a>
-        </nav>
-
+        <menu>
+            <nav id="option1">
+                <a href=""><img src="assets/images/menu.svg"></a>
+                <a href=""><img src="assets/images/pesquisa.svg"></a>
+            </nav> 
+            <div id="menuImg">
+                <img src="assets/images/hbo.png" alt="hbo">
+            </div>
+            <nav id="option2">
+                <a href="">Assinar</a>
+                <a href="">Entrar</a>
+            </nav>
+        </menu>
     </header>
-
     <main>
         <h1>Entrar</h1>
         <p>Você tem uma conta HBO Max?</p>
 
         <form action="" method="post">
             <label>E-mail</label>
-            <input type="email" placeholder="" name="email">
+            <input type="email" placeholder="" name="email" required>
 
             <label>Senha</label>
-            <input type="password" name="password">
+            <input type="password" name="password" required>
 
             <button id="entrar" type="submit">Entrar</button>
 
@@ -35,9 +42,6 @@
             <button id="provedor" type="submit">Entrar como provedor</button>
 
         </form>
-
-
     </main>
-
 </body>
 </html>
